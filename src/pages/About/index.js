@@ -28,7 +28,7 @@ export default function SobreMim() {
       <p className={styles.paragrafo}>
         Atualmente estou cursando ADS - Análise e Desenvolvimento de Sistemas no
         Ceub de Taguatinga/DF. Estou no 4º semestre e ansioso para finalizar essa etapa e
-        adentrar cada vez mais nesse mercado imenso que é o tecnologia.
+        adentrar cada vez mais nesse mercado imenso que é o da tecnologia.
       </p>
       <p className={styles.paragrafo}>
         Contrary to popular belief, Lorem Ipsum is not simply random text. It

@@ -1,10 +1,12 @@
 import { Route, Routes, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+
 import posts from "../../json/posts.json";
 import PostModelo from "../../components/PostModelo";
+import DefaultPage from "../../components/DefaultPage";
 
 import "./Post.css";
-import DefaultPage from "../../components/DefaultPage";
+import PostCard from "../../components/PostCard";
 
 export default function Post() {
   const parametros = useParams();
@@ -23,14 +25,29 @@ export default function Post() {
         <Route
           index
           element={
-            <PostModelo
-              fotoCapa={`/assets/posts/${post.id}/capa.npg`}
-              titulo={post.titulo}
-            >
-              <div className="post-markdown-container">
-                <ReactMarkdown>{post.texto}</ReactMarkdown>
-              </div>
-            </PostModelo>
+            <section>
+              <PostModelo
+                fotoCapa={`/assets/posts/${post.id}/capa.npg`}
+                titulo={post.titulo}
+              >
+                <div className="post-markdown-container">
+                  <ReactMarkdown>{post.texto}</ReactMarkdown>
+                </div>
+              </PostModelo>
+              <section className="container-more-posts">
+                <h1 className="title-more-posts">Outros Posts que você pode gostar</h1>
+                <div className="morePosts">
+                  {posts
+                    .filter((p) => p.id !== post.id) // Exclua o Post atual
+                    .slice(0, 4) // Pegue os 4 primeiros posts após a exclusão
+                    .map((post) => (
+                      <li key={post.id}>
+                        <PostCard post={post} />
+                      </li>
+                    ))}
+                </div>
+              </section>
+            </section>
           }
         />
       </Route>
