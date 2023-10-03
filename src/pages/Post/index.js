@@ -38,8 +38,8 @@ export default function Post() {
                 <h1 className="title-more-posts">Outros Posts que você pode gostar</h1>
                 <div className="morePosts">
                   {posts
-                    .filter((p) => p.id !== post.id) // Exclua o Post atual
-                    .slice(0, 4) // Pegue os 4 primeiros posts após a exclusão
+                    .filter((p) => p.id !== post.id) 
+                    .slice(0, 4) 
                     .map((post) => (
                       <li key={post.id}>
                         <PostCard post={post} />

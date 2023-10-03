@@ -30,25 +30,6 @@ export default function SobreMim() {
         Ceub de Taguatinga/DF. Estou no 4º semestre e ansioso para finalizar essa etapa e
         adentrar cada vez mais nesse mercado imenso que é o da tecnologia.
       </p>
-      <p className={styles.paragrafo}>
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC, making it
-        over 2000 years old.
-      </p>
-      <p className={styles.paragrafo}>
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC, making it
-        over 2000 years old.Contrary to popular belief, Lorem Ipsum is not
-        simply random text. It has roots in a piece of classical Latin
-        literature from 45 BC, making it over 2000 years old.
-      </p>
-      <p className={styles.paragrafo}>
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC, making it
-        over 2000 years old.Contrary to popular belief, Lorem Ipsum is not
-        simply random text. It has roots in a piece of classical Latin
-        literature from 45 BC, making it over 2000 years old.
-      </p>
     </PostModelo>
   );
 }
