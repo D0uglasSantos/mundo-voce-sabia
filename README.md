@@ -1,6 +1,6 @@
-<h2>Link Project</h2>
+<h1>Link Project</h1>
 
-<a href="https://mundo-voce-sabia.vercel.app">Project</a>
+<a href="https://mundo-voce-sabia.vercel.app" target="_blank">Project</a>
 
 # Getting Started with Create React App
 
